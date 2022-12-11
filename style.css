@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    border-top: 10px solid orange;
+    position: relative;
+}
+.header:before{
+    content: '';
+    width: 100%;
+    height: 0.5px;
+    background-color: orange;
+    position: absolute;
+    bottom: 19px;
+    z-index: 1;
+}
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    position: relative;
+    height: 100px;
+}
+.header_logo{
+   
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.social_list{
+    width: 20px;
+    height: 10px;
+    display: flex;  
+    flex-wrap: nowrap;
+
+   
+}
+
+.social_items{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header_logo a {
+    width: 500px;
+    height: 100px;
+    display: block;
+}
+
+.header_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.header_nav .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.hero{
+    background-image: url(../img/photo_2022-11-05_16-33-23.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero_title{
+    color: aliceblue;
+    font: weight;
+    font-size: 70px;
+    z-index: 1;
+    padding: 5%;
+    padding-left: 5%;
+}
+
+.hero_slogan{
+    color: aliceblue;
+    font-size: 30px;
+    padding:5%;
+    padding-left: 5%;
+}
+.description{
+    display: flex;
+    width: 100%;
+
+}
+.left{
+    align-items: flex-start;
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 10%;
+
+}
+.ppp{
+    font-size: 40px;
+    color: orange;
+}
+.right{
+    width: -50%;
+    align-items: flex-end;
+    
+}
+.orange{
+    background-color: orange;
+    height: 5px;
+    width: 200px;
+}
+.left p{
+    font-size: 20px;
+}
+.button {
+    background-color: orange;
+    border: 2px solid orange;
+    color: black;
+    border-radius: 30px;
+    padding: 15px;
+    width: 200px;
+  }
